@@ -36,6 +36,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="FgS-eF-7YA" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="WQb-ve-Mdh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -46,10 +49,10 @@
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="yag-mu-1Cf">
             <objects>
-                <viewController id="FgS-eF-7YA" customClass="ViewController" customModule="Emojional" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FgS-eF-7YA" customClass="SecondViewController" customModule="Emojional" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v4s-H1-QhS">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,6 +71,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="forestClicked:" destination="FgS-eF-7YA" eventType="touchUpInside" id="mR3-47-EK3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEF-m1-xsA">
                                 <rect key="frame" x="114" y="525" width="200" height="220"/>
@@ -83,20 +89,26 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="beachClicked:" destination="FgS-eF-7YA" eventType="touchUpInside" id="loc-hP-k98"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VsK-j2-9ml"/>
                         <color key="backgroundColor" red="0.85037904977798462" green="0.9543953537940979" blue="0.76715236902236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="AHA-PH-okL" kind="presentation" identifier="secondToThird" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="lQK-uT-ecH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1m5-Kd-awx" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="728.97196261682234" y="93.30453563714903"/>
         </scene>
-        <!--View Controller-->
+        <!--Fourth View Controller-->
         <scene sceneID="wkR-9S-QHz">
             <objects>
-                <viewController id="nhR-x4-I0P" customClass="ViewController" customModule="Emojional" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nhR-x4-I0P" customClass="FourthViewController" customModule="Emojional" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rly-tC-zbx">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,6 +127,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="runnerClicked:" destination="nhR-x4-I0P" eventType="touchUpInside" id="uXB-dc-fyz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Cs-zL-4WE">
                                 <rect key="frame" x="114" y="525" width="200" height="220"/>
@@ -130,20 +145,26 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bikeClicked:" destination="nhR-x4-I0P" eventType="touchUpInside" id="7YA-vz-Mtg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kYP-tW-KFy"/>
                         <color key="backgroundColor" red="0.71818429231643677" green="0.81929057836532593" blue="0.77820509672164917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="86g-QZ-3cJ" kind="presentation" identifier="fourthToEnd" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="6QB-Qz-LgC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xEa-EU-mmL" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2108" y="93"/>
         </scene>
-        <!--View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="8Fb-uZ-Nm0">
             <objects>
-                <viewController id="AHA-PH-okL" customClass="ViewController" customModule="Emojional" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AHA-PH-okL" customClass="ThirdViewController" customModule="Emojional" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cg6-Rq-63i">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -162,6 +183,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="burgerClicked:" destination="AHA-PH-okL" eventType="touchUpInside" id="qS3-8I-iRw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60i-iR-5UT">
                                 <rect key="frame" x="114" y="525" width="200" height="220"/>
@@ -177,20 +201,26 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tacoClicked:" destination="AHA-PH-okL" eventType="touchUpInside" id="shG-eJ-JcQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nhq-3l-Trc"/>
                         <color key="backgroundColor" red="0.75183391571044922" green="0.85953444242477417" blue="0.74788689613342285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="nhR-x4-I0P" kind="presentation" identifier="thirdToFourth" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="jd5-bP-KrX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bUO-F3-n9P" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1426" y="93"/>
+            <point key="canvasLocation" x="1417" y="93"/>
         </scene>
-        <!--View Controller-->
+        <!--Conclusion View Controller-->
         <scene sceneID="d1O-0y-evm">
             <objects>
-                <viewController id="86g-QZ-3cJ" customClass="ViewController" customModule="Emojional" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="86g-QZ-3cJ" customClass="ConclusionViewController" customModule="Emojional" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SK0-0p-bHG">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -210,7 +240,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="sQW-Ob-uUC"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="sQW-Ob-uUC"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank you for playing!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYu-1E-lVN">
