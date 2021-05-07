@@ -16,13 +16,13 @@ class FourthViewController: UIViewController {
     }
     
     @IBAction func runnerClicked(_ sender: Any) {
-        let alertController = UIAlertController(title: "Emojional This or That", message: "you made the right choice😌 #KlossyRunClub🏃‍♀️💘", preferredStyle: UIAlertController.Style.alert)
+        let alertController = UIAlertController(title: "Emojional This or That", message: globalVars.customStruct.emojiMessages[((sender as AnyObject).titleLabel?.text as! String)]![Int.random(in: 0..<(globalVars.customStruct.emojiMessages[(sender as AnyObject).titleLabel?.text as! String]!.count))] as! String, preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(UIAlertAction(title: "Continue to end!", style: UIAlertAction.Style.default, handler: afterAlert))
         present(alertController, animated: true, completion: nil)
     }
     
     @IBAction func bikeClicked(_ sender: Any) {
-        let alertController = UIAlertController(title: "Emojional This or That", message: "don't forget your helmet!⛑ #SafetyFirst", preferredStyle: UIAlertController.Style.alert)
+        let alertController = UIAlertController(title: "Emojional This or That", message: globalVars.customStruct.emojiMessages[((sender as AnyObject).titleLabel?.text as! String)]![Int.random(in: 0..<(globalVars.customStruct.emojiMessages[(sender as AnyObject).titleLabel?.text as! String]!.count))] as! String, preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(UIAlertAction(title: "Continue to end!", style: UIAlertAction.Style.default, handler: afterAlert))
         present(alertController, animated: true, completion: nil)
     }

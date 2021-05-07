@@ -18,6 +18,7 @@
 		DC7A55AC2644839000D7F0AE /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7A55AB2644839000D7F0AE /* ThirdViewController.swift */; };
 		DC7A55AE2644839B00D7F0AE /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7A55AD2644839B00D7F0AE /* FourthViewController.swift */; };
 		DC7A55B0264483B800D7F0AE /* ConclusionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7A55AF264483B800D7F0AE /* ConclusionViewController.swift */; };
+		DC7A55B226448C5300D7F0AE /* globalVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7A55B126448C5300D7F0AE /* globalVars.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		DC7A55AB2644839000D7F0AE /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		DC7A55AD2644839B00D7F0AE /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		DC7A55AF264483B800D7F0AE /* ConclusionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConclusionViewController.swift; sourceTree = "<group>"; };
+		DC7A55B126448C5300D7F0AE /* globalVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globalVars.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				DC7A55AB2644839000D7F0AE /* ThirdViewController.swift */,
 				DC7A55AD2644839B00D7F0AE /* FourthViewController.swift */,
 				DC7A55AF264483B800D7F0AE /* ConclusionViewController.swift */,
+				DC7A55B126448C5300D7F0AE /* globalVars.swift */,
 			);
 			path = Emojional;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC7A55B226448C5300D7F0AE /* globalVars.swift in Sources */,
 				DC7A5598264476A800D7F0AE /* ViewController.swift in Sources */,
 				DC7A5594264476A800D7F0AE /* AppDelegate.swift in Sources */,
 				DC7A55A82644797D00D7F0AE /* GIF-Swift.swift in Sources */,

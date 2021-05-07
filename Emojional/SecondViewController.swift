@@ -8,6 +8,9 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    let emojis = ["🌲": "forest", "🏝": "beach"]
+    let emojiMessages = {}
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,13 +19,18 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func forestClicked(_ sender: Any) {
-        let alertController = UIAlertController(title: "Emojional This or That", message: "great choice, remember to bring hiking boots and a snack for the trail!🥾", preferredStyle: UIAlertController.Style.alert)
+//        let emojiSelection = (sender as AnyObject).titleLabel?.text as! String
+//        print(emojiSelection)
+//        let randomIndex = Int.random(in: 0..<(globalVars.customStruct.emojiMessages[emojiSelection]!.count))
+//        let message = globalVars.customStruct.emojiMessages[emojiSelection]![randomIndex] as? String?
+//        let alertController = UIAlertController(title: "Emojional This or That", message: message as! String, preferredStyle: UIAlertController.Style.alert)
+        let alertController = UIAlertController(title: "Emojional This or That", message: globalVars.customStruct.emojiMessages[((sender as AnyObject).titleLabel?.text as! String)]![Int.random(in: 0..<(globalVars.customStruct.emojiMessages[(sender as AnyObject).titleLabel?.text as! String]!.count))] as! String, preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(UIAlertAction(title: "Continue to next question!", style: UIAlertAction.Style.default, handler: afterAlert))
         present(alertController, animated: true, completion: nil)
     }
     
     @IBAction func beachClicked(_ sender: Any) {
-        let alertController = UIAlertController(title: "Emojional This or That", message: "great choice, remember your sunglasses and sunscreen!😎", preferredStyle: UIAlertController.Style.alert)
+        let alertController = UIAlertController(title: "Emojional This or That", message: globalVars.customStruct.emojiMessages[((sender as AnyObject).titleLabel?.text as! String)]![Int.random(in: 0..<(globalVars.customStruct.emojiMessages[(sender as AnyObject).titleLabel?.text as! String]!.count))] as! String, preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(UIAlertAction(title: "Continue to next question!", style: UIAlertAction.Style.default, handler: afterAlert))
         present(alertController, animated: true, completion: nil)
     }

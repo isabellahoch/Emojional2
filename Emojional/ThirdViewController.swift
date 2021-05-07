@@ -16,12 +16,12 @@ class ThirdViewController: UIViewController {
     }
     
     @IBAction func burgerClicked(_ sender: Any) {
-        let alertController = UIAlertController(title: "Emojional This or That", message: "would you like a side of fries with that?🍟", preferredStyle: UIAlertController.Style.alert)
+        let alertController = UIAlertController(title: "Emojional This or That", message: globalVars.customStruct.emojiMessages[((sender as AnyObject).titleLabel?.text as! String)]![Int.random(in: 0..<(globalVars.customStruct.emojiMessages[(sender as AnyObject).titleLabel?.text as! String]!.count))] as! String, preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(UIAlertAction(title: "Continue to next question!", style: UIAlertAction.Style.default, handler: afterAlert))
         present(alertController, animated: true, completion: nil)
     }
     @IBAction func tacoClicked(_ sender: Any) {
-        let alertController = UIAlertController(title: "Emojional This or That", message: "would you like a side of guacamole with that?🥑", preferredStyle: UIAlertController.Style.alert)
+        let alertController = UIAlertController(title: "Emojional This or That", message: globalVars.customStruct.emojiMessages[((sender as AnyObject).titleLabel?.text as! String)]![Int.random(in: 0..<(globalVars.customStruct.emojiMessages[(sender as AnyObject).titleLabel?.text as! String]!.count))] as! String, preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(UIAlertAction(title: "Continue to next question!", style: UIAlertAction.Style.default, handler: afterAlert))
         present(alertController, animated: true, completion: nil)
     }
